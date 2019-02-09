@@ -1,0 +1,65 @@
+@primary-color: white;
+@primary-border-color: white;
+@primary-bg: rgb(235, 244, 244);
+@primary-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+
+body {
+    background-color: @primary-bg;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.table {
+    background-color: @primary-color;
+    box-shadow: @primary-box-shadow ;
+    width: 320px;
+    height: 380px;
+    margin-left: 250px;
+    margin-top: 100px;
+    &-title {
+        background-color: #20B2AA;
+        box-shadow:@primary-box-shadow;
+        width: 48%;
+        height: 6.5%;
+        margin-left: 10%;
+        &-item {
+            color: @primary-border-color;
+            margin-left: 7%;
+            text-align: center;
+            .font()
+        }
+    }
+    .form {
+        margin-left: 10%;
+        margin-top:7%; 
+        &-name {
+            text-align: left;
+            .font()
+        }
+        &-control {
+            border-radius: 1px;
+            border: 1px solid  lightgrey;
+            background-color: @primary-bg;
+            height: 28px;
+            width: 86%;
+            margin-top: 3%;
+        }
+    }
+    .submit {
+        border-radius: 4px;
+        border: 4px solid #00BFFF;
+        background-color: #00BFFF;
+        margin-left: 10%;
+        margin-top: 3%;
+        width: 79%;
+        height: 42px;
+        color: @primary-border-color;
+        .font();
+    }
+}
+
+.font {
+    font-size: 12px;
+    font-family: "Arial";
+    font-weight: bold;
+}
